@@ -1,0 +1,72 @@
+-FIBONACCI NUMBER (5)------------------------------
+Binary: 5
+Linear: 5
+Tail: 5
+Total execution time (Binary): 0ms
+Total execution time (Linear): 0ms
+Total execution time (Tail): 0ms
+
+-FIBONACCI NUMBER (10)------------------------------
+Binary: 55
+Linear: 55
+Tail: 55
+Total execution time (Binary): 0ms
+Total execution time (Linear): 0ms
+Total execution time (Tail): 0ms
+
+-FIBONACCI NUMBER (15)------------------------------
+Binary: 610
+Linear: 610
+Tail: 610
+Total execution time (Binary): 0ms
+Total execution time (Linear): 0ms
+Total execution time (Tail): 0ms
+
+-FIBONACCI NUMBER (20)------------------------------
+Binary: 6765
+Linear: 6765
+Tail: 6765
+Total execution time (Binary): 2ms
+Total execution time (Linear): 0ms
+Total execution time (Tail): 0ms
+
+-FIBONACCI NUMBER (25)------------------------------
+Binary: 75025
+Linear: 75025
+Tail: 75025
+Total execution time (Binary): 5ms
+Total execution time (Linear): 0ms
+Total execution time (Tail): 0ms
+
+-FIBONACCI NUMBER (30)------------------------------
+Binary: 832040
+Linear: 832040
+Tail: 832040
+Total execution time (Binary): 7ms
+Total execution time (Linear): 0ms
+Total execution time (Tail): 0ms
+
+-FIBONACCI NUMBER (35)------------------------------
+Binary: 9227465
+Linear: 9227465
+Tail: 9227465
+Total execution time (Binary): 60ms
+Total execution time (Linear): 0ms
+Total execution time (Tail): 0ms
+
+-FIBONACCI NUMBER (40)------------------------------
+Binary: 102334155
+Linear: 102334155
+Tail: 102334155
+Total execution time (Binary): 594ms
+Total execution time (Linear): 0ms
+Total execution time (Tail): 0ms
+
+-FIBONACCI NUMBER (45)------------------------------
+Binary: 1134903170
+Linear: 1134903170
+Tail: 1134903170
+Total execution time (Binary): 6572ms
+Total execution time (Linear): 0ms
+Total execution time (Tail): 0ms
+
