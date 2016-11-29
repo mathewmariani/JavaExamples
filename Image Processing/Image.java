@@ -115,9 +115,9 @@ public class Image {
       throw new IllegalArgumentException();
     }
 
-    Pixel[][] temp = new Pixel[h-y][w-x];
+    Pixel[][] temp = new Pixel[h][w];
     for (int i = 0; i < h; i++) {
-      _data[i] = Arrays.copyOfRange(data[y+i], x, x+w);
+      temp[i] = Arrays.copyOfRange(data[y+i], x, x+w);
     }
 
     data = temp;

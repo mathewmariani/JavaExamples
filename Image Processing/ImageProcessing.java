@@ -40,47 +40,57 @@ public class ImageProcessing {
     // OPERATIONS
     //
 
-    if (operationOnImage.equals("-fh")) {
-      img.flipHorizontal();
-    } else if (operationOnImage.equals("-fv")) {
-      img.flipVertical();
-    } else if (operationOnImage.equals("-gs")) {
-      img.toGrey();
-    } else if (operationOnImage.equals("-cr")) {
-      if(args.length < 8) {
-        System.out.println("Cropping requires (x, y, w, h).");
-        return;
-      }
+    switch (operationOnImage) {
+      case "-fh":
+        img.flipHorizontal();
+        break;
+      case "-fv":
+        img.flipVertical();
+        break;
+      case "-gs":
+        img.toGrey();
+        break;
+      case "-cr":
+        if(args.length < 8) {
+          System.out.println("Cropping requires (x, y, w, h).");
+          return;
+        }
 
-      int x = Integer.parseInt(args[4]);
-      int y = Integer.parseInt(args[5]);
-      int w = Integer.parseInt(args[6]);
-      int h= Integer.parseInt(args[7]);
+        int x = Integer.parseInt(args[4]);
+        int y = Integer.parseInt(args[5]);
+        int w = Integer.parseInt(args[6]);
+        int h= Integer.parseInt(args[7]);
 
-      img.crop(x, y, w, h);
+        img.crop(x, y, w, h);
+        break;
+      default:
+        break;
     }
 
     //
     // OUTPUT
     //
 
-    if(formatOutputFile.equals("pgm")) {
-      try {
-        ImageFileUtilities.writePgm(img, outputFile);
-      } catch (IOException e) {
-        System.out.println("Unable to write PGM.");
+    switch (formatOutputFile) {
+      case "pgm":
+        try {
+          ImageFileUtilities.writePgm(img, outputFile);
+        } catch (IOException e) {
+          System.out.println("Unable to write PGM.");
+          return;
+        }
+        break;
+      case "pnm":
+        try {
+          ImageFileUtilities.writePnm(img, outputFile);
+        } catch (IOException e) {
+          System.out.println("Unable to write PNM.");
+          return;
+        }
+        break;
+      default:
+        System.out.println("Unknown output file extension ("+outputFile+")");
         return;
-      }
-    } else if (formatOutputFile.equals("pnm")) {
-      try {
-        ImageFileUtilities.writePnm(img, outputFile);
-      } catch (IOException e) {
-        System.out.println("Unable to write PNM.");
-        return;
-      }
-    } else {
-      System.out.println("Unknown output file extension ("+outputFile+")");
-      return;
     }
   }
 }
