@@ -3,14 +3,12 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ *	Docs:
+ *	https://docs.oracle.com/javase/7/docs/api/java/io/BufferedWriter.html
+ **/
 public class BufferedWriterExample {
-	
-	/**
-	 *	Mathew Mariani
-	 *
-	 *	Docs:
-	 *	https://docs.oracle.com/javase/7/docs/api/java/io/BufferedWriter.html
-	 **/
+
 	public static void main(String[] args) {
 
 		//

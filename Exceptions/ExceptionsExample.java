@@ -1,11 +1,8 @@
+/**
+ *	Docs:
+ *	https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html
+ **/
 public class ExceptionsExample {
-
-	/**
-	 *	Mathew Mariani
-	 *
-	 *	Docs:
-	 *	https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html
-	 **/
 	public static void main(String[] args) {
 		int a[] = new int[2];
 

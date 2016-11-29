@@ -5,15 +5,12 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ *	Docs:
+ *	https://docs.oracle.com/javase/7/docs/api/java/io/BufferedReader.html
+ *	https://docs.oracle.com/javase/7/docs/api/java/io/BufferedWriter.html
+ **/
 public class BufferedIO {
-
-	/**
-	 *	Mathew Mariani
-	 *
-	 *	Docs:
-	 *	https://docs.oracle.com/javase/7/docs/api/java/io/BufferedReader.html
-	 *	https://docs.oracle.com/javase/7/docs/api/java/io/BufferedWriter.html
-	 **/
 	public static void main(String[] args) throws Exception {
 
 		//
@@ -21,7 +18,7 @@ public class BufferedIO {
 		//
 
 		StringBuilder response = new StringBuilder();
-		
+
 		try {
 
 			// im assuming this file exists since this is my example
@@ -32,9 +29,9 @@ public class BufferedIO {
 			//
 
 			// set up our readers
-			FileReader fr = new FileReader(file.getAbsoluteFile());		
+			FileReader fr = new FileReader(file.getAbsoluteFile());
 			BufferedReader br = new BufferedReader(fr);
-			
+
 			int currentChar;
 			while ((currentChar = br.read()) != -1) {
 				response.append((char)currentChar);
@@ -58,7 +55,7 @@ public class BufferedIO {
 
 			System.out.println("Done Writting");
 			bw.close();
-			
+
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
